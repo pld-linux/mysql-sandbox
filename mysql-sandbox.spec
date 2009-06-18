@@ -19,6 +19,9 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# matches 'use mysql' from inline text
+%define		_noautoreq	'perl(mysql)'
+
 %description
 MySQL Sandbox is a tool that installs one or more MySQL servers within
 seconds, easily, securely, and with full control.
