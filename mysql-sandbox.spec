@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	MySQL
 %define		pnam	Sandbox
 Summary:	Quickly installs MySQL side server, either standalone or in groups
